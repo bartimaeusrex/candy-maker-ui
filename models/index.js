@@ -16,8 +16,7 @@ const Products = ProductsModel(connection, Sequelize, Manufacturers)
 Products.belongsTo(Manufacturers)
 Manufacturers.hasMany(Products)
 
-module.exports = {
+export default {
   Manufacturers,
-  Op: Sequelize.Op,
   Products,
 }
